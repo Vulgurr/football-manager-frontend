@@ -1,0 +1,53 @@
+/* Contenedor principal: parece una tarjeta flotante */
+.contenedor-lista {
+  max-width: 1000px; /* Que no se estire infinito en pantallas grandes */
+  margin: 40px auto; /* Centrado horizontalmente */
+  background-color: #ffffff;
+  border-radius: 12px; /* Bordes redondeados */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra elegante */
+  overflow: hidden; /* Para que la tabla no se salga de los bordes redondos */
+  padding-bottom: 20px;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* La Tabla */
+.tabla {
+  width: 100%;
+  border-collapse: collapse; /* Elimina espacios entre celdas */
+  text-align: left;
+}
+
+/* Cabecera de la tabla */
+.tabla thead tr {
+  background-color: #1a2a3a; /* Azul oscuro profesional */
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.tabla th {
+  padding: 15px 20px;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* Cuerpo de la tabla */
+.tabla tbody tr {
+  border-bottom: 1px solid #eeeeee;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Efecto al pasar el mouse (Hover) */
+.tabla tbody tr:hover {
+  background-color: #f3f8ff; /* Un celeste muy clarito */
+  transform: scale(1.005); /* Efecto sutil de "levantarse" */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  cursor: default;
+}
+
+/* Celdas */
+.tabla td {
+  padding: 12px 20px;
+  color: #555;
+  vertical-align: middle; /* Centra el contenido verticalmente */
+}

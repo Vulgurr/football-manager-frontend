@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="img-src 'self' data: blob: https://res.cloudinary.com https://upload.wikimedia.org https://cdn-icons-png.flaticon.com;">
+    <!--Le doy blindaje a mi frontend también
+    El CSP (Content Security Policy) no está diseñado para proteger al servidor de los hackers, 
+    está diseñado para proteger a los usuarios inocentes de ataques XSS-->
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

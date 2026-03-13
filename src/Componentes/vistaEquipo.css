@@ -1,0 +1,112 @@
+.detalle-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 800px;
+  margin: 0 auto; /* Centrado */
+}
+
+.detalle-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 1rem;
+}
+
+.escudo-grande {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+/* --- MAGIA DEL GRID --- */
+.formulario-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+  gap: 1.5rem; /* Espacio entre campos */
+}
+
+/* Estilos de los inputs y labels */
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.campo label {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.campo input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.campo input:disabled {
+  background-color: #f9f9f9;
+  border-color: transparent;
+  color: #333;
+  font-weight: 500;
+}
+
+/* --- CLASES UTILITARIAS --- */
+/* Campos que ocupan todo el ancho (2 columnas) */
+.amplio {
+  grid-column: span 2; 
+}
+
+/* Campos pequeños */
+.chico {
+  max-width: 100px;
+}
+
+/* Campos de sistema (solo texto) */
+.sistema {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.8rem;
+    color: #999;
+}
+
+.acciones-form {
+  grid-column: span 2;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.btn-guardar {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-cancelar {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-modificar {
+    background-color: purple;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
