@@ -9,6 +9,7 @@
 Interfaz de usuario moderna y dinámica para la gestión de equipos de fútbol. Esta aplicación consume una API RESTful propia y ofrece una experiencia de usuario fluida (Single Page Application).
 
 🌍 **Live Demo:** [Ver Aplicación en Vivo](https://manager-futbol.netlify.app)
+> **Nota importante sobre la demo:** El backend está desplegado en la capa gratuita de Render. Si la API no ha recibido peticiones recientemente, el primer tiempo de carga puede demorar entre **30 y 60 segundos** mientras el servidor "despierta". Las peticiones siguientes responderán con normalidad.
 
 ---
 
