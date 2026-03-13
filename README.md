@@ -38,7 +38,8 @@ Interfaz de usuario moderna y dinámica para la gestión de equipos de fútbol. 
    ```
 2.  Instalar dependencias:
     ```bash
-      npm install
+    cd football-manager-frontend
+    npm install
     ```
 3. Configurar variables de entorno:
    
